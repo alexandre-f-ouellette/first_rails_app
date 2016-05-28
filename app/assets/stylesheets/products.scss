@@ -1,0 +1,33 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  color: black;
+  text-decoration: underline;
+}
+
+table {
+  width: 80%;
+  margin-top: 1em;
+}
+
+th {
+  font-size: 1.2em;
+}
+
+.actions {
+  text-decoration: underline;
+}
+
+.page-action {
+  margin-bottom: 0.5em;
+}
+
+.page-action > a {
+  text-decoration: underline;
+}
+
+.content {
+  padding-left: 1em;
+}

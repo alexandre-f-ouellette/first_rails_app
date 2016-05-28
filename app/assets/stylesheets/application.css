@@ -16,12 +16,16 @@
 
 /**** Navigation ****/
 .navbar {
-  background-color: #39373a;
+  background-color: #555;
   width: 100%;
 }
 
 .navbar-brand {
   padding: 15px 0 0 20px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
 }
 
 .nav li a {
@@ -33,7 +37,7 @@
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #39373a;
+  background-color: #555;
 }
 
 /* Typography */
@@ -59,7 +63,7 @@ body {
 /**** FOOTER ****/
 footer {
   width: 100%;
-  background-color: #39373a;
+  background-color: #555;
   color: white;
   float: left;
   padding: .8em 0 .5em .3em;
