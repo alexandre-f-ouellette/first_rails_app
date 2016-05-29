@@ -3,31 +3,27 @@
 <div class="content">
   <h1>Listing Products</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Image url</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
+  <div class="container">
+    <div class="row">
       <% @products.each do |product| %>
-        <tr>
-          <td><%= product.name %></td>
-          <td><%= product.description %></td>
-          <td><%= product.image_url %></td>
-          <td class="actions"><%= link_to 'Show', product %></td>
-          <td class="actions"><%= link_to 'Edit', edit_product_path(product) %></td>
-          <td class="actions"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
+        <div class="product col-sm-2 col-md-4">
+          <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+          <h2><%= link_to product.name, product %></h2>
+          <p><%= product.description %></p>
+          <% if product.price.blank? %>
+            <p>Price not yet determined</p>
+          <% else %>
+            <p>$<%= product.price %></p>
+          <% end %>
+          <%= link_to 'Edit', edit_product_path(product) %>
+          <span>|</span>
+          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div><!-- END OF COL -->
       <% end %>
-    </tbody>
-  </table>
-
+    </div>
+  </div>
   <br>
+
   <div class="page-action">
     <%= link_to 'New Product', new_product_path %>
   </div>

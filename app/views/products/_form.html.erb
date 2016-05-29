@@ -20,8 +20,16 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price , :step => 0.01 %>
+  </div>
+  <div class="field">
     <%= f.label :image_url %><br>
     <%= f.text_field :image_url %>
+  </div>
+  <div class="field">
+    <%= f.label :colour %><br>
+    <%= f.text_field :colour %>
   </div>
   <div class="actions">
     <%= f.submit %>

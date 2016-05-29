@@ -3,6 +3,7 @@
   <h2>
     <%= @product.name %>
   </h2>
+  <%= image_tag(@product.image_url, class: "show-img") %>
 
   <p>
     <strong>Description:<br></strong>
@@ -10,8 +11,17 @@
   </p>
 
   <p>
-    <strong>Image url:<br></strong>
-    <%= @product.image_url %>
+    <strong>Colour:<br></strong>
+    <%= @product.colour %>
+  </p>
+
+  <p>
+    <strong>Price:<br></strong>
+    <% if @product.price.blank? %>
+      Price not yet determined
+    <% else %>
+      $<%= @product.price %>
+    <% end %>
   </p>
 
   <div class="page-action">
