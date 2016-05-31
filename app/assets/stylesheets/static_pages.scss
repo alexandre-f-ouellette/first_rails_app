@@ -2,3 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-caption {
+  font-size: 1.5em;
+}
+
+.item img {
+  max-height: 350px;
+  width: auto;
+}
