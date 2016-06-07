@@ -26,6 +26,11 @@
           </button>
           <%= link_to "Bike Ottawa", root_path, {class: 'navbar-brand'} %>
         </div>
+        <%= form_tag('/products', method: 'get', class: 'navbar-form navbar-left') do %>
+          <%= label_tag(:q, 'Search for: ') %>
+          <%= text_field_tag(:q) %>
+          <%= submit_tag('Search', class: 'btn btn-primary btn-xs') %>
+        <% end %>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Products", products_path %></li>
