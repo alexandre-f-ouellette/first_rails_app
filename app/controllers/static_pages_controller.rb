@@ -15,10 +15,6 @@ class StaticPagesController < ApplicationController
     @email = params[:email]
     @message = params[:message]
 
-    ActionMailer::Base.mail(
-      :from => @email,
-      :to => 'alexandre.f.ouellette@gmail.com',
-      :subject => "A new contact message from #{@name}",
-      :body => @message).deliver_later
+    UserMailer.contact_form(@email, @name, @message).deliver_later
   end
 end
