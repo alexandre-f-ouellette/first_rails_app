@@ -1,0 +1,206 @@
+/* line 5, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+h1 {
+  color: black;
+  text-decoration: underline;
+}
+
+/* line 10, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.content {
+  padding-left: 1em;
+}
+
+/* line 14, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.product {
+  text-align: center;
+}
+
+/* line 18, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.show-img {
+  max-width: 350px;
+  height: auto;
+}
+/* line 1, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.carousel-inner img {
+  margin: auto;
+}
+
+/* line 9, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  font-size: 1.5em;
+}
+
+/* line 13, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.item img {
+  max-height: 350px;
+  width: auto;
+}
+
+/* line 18, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.content {
+  padding-bottom: 1em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+/**** Navigation ****/
+
+.navbar {
+  background-color: #555;
+  width: 100%;
+}
+
+.navbar-brand {
+  padding: 15px 0 0 20px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.nav li a {
+  padding-left: 2em;
+}
+
+.navbar-header button span {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #555;
+}
+
+/* Typography */
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1em;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: yellow;
+}
+
+.navbar-form {
+  margin: 15px 15px 0px 15px;
+}
+
+.navbar-form label {
+  color: white;
+  font-weight: normal;
+}
+
+body {
+  padding-top: 50px;
+}
+
+
+/**** FOOTER ****/
+footer {
+  width: 100%;
+  background-color: #555;
+  color: white;
+  float: left;
+  padding: .8em 0 .5em .3em;
+}
+
+footer p {
+  display: inline;
+  -webkit-margin-before: 0;
+  vertical-align: top;
+  padding-right: .2em;
+}
