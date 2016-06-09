@@ -36,13 +36,27 @@
             <li><%= link_to "Products", products_path %></li>
             <li><%= link_to "About", static_pages_about_path %></li>
             <li><%= link_to "Contact", static_pages_contact_path %></li>
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END OF NAVBAR -->
 
-<%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <div class="container">
+
+      <%= yield %>
+
+    </div>
 
 <footer>
   &copy; 2015 Bike Ottawa

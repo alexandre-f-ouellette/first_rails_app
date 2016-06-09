@@ -40,6 +40,11 @@
   background-color: #555;
 }
 
+/* Used for devise forms */
+.form-button {
+  margin-top: 1em;
+}
+
 /* Typography */
 
 .navbar-default .navbar-nav > li > a {
