@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orders details</h1>
+
+<div class="row">
+  <div class="col-md-12">
+    <p><strong>Order Date:</strong></p>
+    <p><%= link_to @order.created_at.to_formatted_s(:long), order_path(@order.id) %></p>
+  </div>
+  <div class="col-md-12">
+    <p><strong>User:</strong></p>
+    <p><%= @order.user.first_name + ' ' + @order.user.last_name %></p>
+  </div>
+  <div class="col-md-12">
+    <p><strong>Product Name:</strong></p>
+    <p><%= link_to @order.product.name, product_path(@order.product.id) %></p>
+  </div>
+  <div class="col-md-3">
+    <p><strong>Total:</strong></p>
+    <p><%= @order.total %></p>
+  </div>
+</div>

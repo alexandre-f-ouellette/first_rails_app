@@ -1,14 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <h3><%= @user.first_name %> <%= @user.last_name %></h3>
+    <p><%= @user.email %></p>
+  </div>
+  <div class="col-md-6 user-actions">
+    <h4>User Actions</h4>
+    <ul>
+      <li><%= link_to 'Modify my name', edit_user_path(@user) %></li>
+      <li><%= link_to 'Modify my password', edit_user_registration_path %></li>
+    </ul>
+  </div>
+</div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+<div class="my-orders-container">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>My Orders</h4>
+    </div>
+  </div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+  <% if @orders %>
+    <%= render partial: 'order' %>
+  <% else %>
+    <p>You currently do not have any orders.</p>
+  <% end %>
+</div>
+
 <%= link_to 'Back', users_path %>

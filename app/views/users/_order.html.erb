@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-4">
+    <p><strong>Order Date:</strong></p>
+  </div>
+  <div class="col-md-4">
+    <p><strong>Product Name:</strong></p>
+  </div>
+  <div class="col-md-4">
+    <p><strong>Order Total:</strong></p>
+  </div>
+</div>
+
+<%= render partial: 'order_list', collection: @user.orders, as: :order %>

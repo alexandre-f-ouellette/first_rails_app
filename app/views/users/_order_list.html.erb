@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-4">
+    <p><strong><%= link_to order.created_at.to_formatted_s(:long), order_path(order.id) %></strong></p>
+  </div>
+  <div class="col-md-4">
+    <p><%= link_to order.product.name, product_path(order.product.id) %></p>
+  </div>
+  <div class="col-md-4">
+    <p><%= order.total %></p>
+  </div>
+</div>
