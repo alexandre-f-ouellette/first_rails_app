@@ -58,3 +58,27 @@ h1 {
   padding-top: 0.2em;
   padding-bottom: 0.4em;
 }
+
+/* This parent can be any width and height */
+.block {
+  text-align: center;
+
+  /* May want to do this if there is risk the container may be narrower than the element inside */
+  white-space: nowrap;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can also be of any width and height */
+.delete-span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
