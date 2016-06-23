@@ -47,8 +47,14 @@ h1 {
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: gray;
+  padding-bottom: 0.5em;
 }
 
 .comments-container p {
   padding-top: 0.5em;
+}
+
+.rating {
+  padding-top: 0.2em;
+  padding-bottom: 0.4em;
 }

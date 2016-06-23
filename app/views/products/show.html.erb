@@ -15,9 +15,7 @@
       <%= @product.name %>
     </h2>
 
-    <p>
-      placeholder for rating (stars)
-    </p>
+    <div class="rated", data-score="<%= @product.average_rating %>"></div>
 
     <div class="price-container">
       <h3>
@@ -48,7 +46,10 @@
   </div>
 </div>
 <div class="row comments-container">
-  <div class="col-md-12">
-    <p>Placeholder for comments to come</p>
+  <div class="col-md-9">
+    <%= render 'comments' %>
+  </div>
+  <div class="col-md-3">
+    <%= render 'new_comment' %>
   </div>
 </div>

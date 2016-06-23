@@ -1,0 +1,13 @@
+<h4>Add a review:</h4>
+
+<% if signed_in? %>
+  <%= form_for([@product, @product.comments.build]) do |f| %>
+    <%= f.label :body, "Comments" %><br>
+    <%= f.text_area :body, class: "form-control" %>
+    <div class="rating"></div>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  <% end %>
+<% else %>
+  <p>Please log in to write a review.</p>
+  <%= button_to('Login', new_user_session_path, method: "get", class: "btn btn-primary") %>
+<% end %>
