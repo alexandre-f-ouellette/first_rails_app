@@ -15,7 +15,40 @@ h1 {
   text-align: center;
 }
 
-.show-img {
-  max-width: 350px;
-  height: auto;
+.image-container {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+.product-image {
+  padding: 1em;
+}
+
+.description-container {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: gray;
+}
+
+.description-container p {
+  padding-top: 0.5em;
+}
+
+.price-container {
+  color: #8f001a;
+}
+
+.price-container h3 {
+  margin-top: 0;
+}
+
+.comments-container {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: gray;
+}
+
+.comments-container p {
+  padding-top: 0.5em;
 }

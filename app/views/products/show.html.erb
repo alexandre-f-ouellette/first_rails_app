@@ -1,31 +1,54 @@
 <p id="notice"><%= notice %></p>
-<div class="content">
-  <h2>
-    <%= @product.name %>
-  </h2>
-  <%= image_tag(@product.image_url, class: "show-img") %>
 
-  <p>
-    <strong>Description:<br></strong>
-    <%= @product.description %>
-  </p>
+<div class="page-action">
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+</div>
 
-  <p>
-    <strong>Colour:<br></strong>
-    <%= @product.colour %>
-  </p>
+<div class="row">
+  <div class="col-md-4 image-container thumbnail">
+    <%= image_tag(@product.image_url, class: "product-image") %>
+  </div>
 
-  <p>
-    <strong>Price:<br></strong>
-    <% if @product.price.blank? %>
-      Price not yet determined
-    <% else %>
-      $<%= @product.price %>
-    <% end %>
-  </p>
+  <div class="col-md-8">
+    <h2>
+      <%= @product.name %>
+    </h2>
 
-  <div class="page-action">
-    <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
+    <p>
+      placeholder for rating (stars)
+    </p>
+
+    <div class="price-container">
+      <h3>
+        <% if @product.price.blank? %>
+          Price not yet determined
+        <% else %>
+            $<%= @product.price %>
+        <% end %>
+      </h3>
+    </div>
+
+    <p>
+      <strong>Colour: </strong>
+      <%= @product.colour %>
+    </p>
+
+    <div class="description-container">
+      <p>
+        <%= @product.description %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row comments-title">
+  <div class="col-md-12">
+    <h3>Comments</h3>
+  </div>
+</div>
+<div class="row comments-container">
+  <div class="col-md-12">
+    <p>Placeholder for comments to come</p>
   </div>
 </div>
