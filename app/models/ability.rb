@@ -7,9 +7,15 @@ class Ability
     can :manage, Order, user_id: user.id
 
     if user.admin?
-      can :delete, Comment
+      can :manage, Comment
+      can :manage, Product
     else
       can :read, Comment
+      can :create, Comment
+      can :destroy, Comment, user_id: user.id
+
+      can :read, Product
+      cannot [:create, :update, :destroy], Product
     end
   end
 end

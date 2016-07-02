@@ -1,5 +1,8 @@
 class ProductsController < ApplicationController
+  before_filter :authenticate_user!, only: [:create, :edit, :update, :destroy]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
+
 
   # GET /products
   # GET /products.json
