@@ -3,8 +3,8 @@ require 'rails_helper'
 describe Comment do
   context "when creating a comment for a product" do
     before do
-      @product = Product.create!(name: "Bicycle #100")
-      @user = User.create!(email: "test-email@example.org", password: "TestPassword123!")
+      @product = FactoryGirl.build(:product)
+      @user = FactoryGirl.build(:user)
     end
 
     it "is not valid when body is not present" do

@@ -2,9 +2,9 @@ require 'rails_helper'
 require 'devise'
 
 describe CommentsController, :type => :controller do
-  let!(:product) { Product.create!(name: "Bike #400") }
-  let!(:user) { User.create!(email: "test-email@example.org", password: "TestPassword123!") }
-  let!(:admin_user) { User.create!(email: "test@example.org", password: "TestPassword123!", admin: true) }
+  let!(:product) { FactoryGirl.create(:product) }
+  let!(:user) { FactoryGirl.create(:user) }
+  let!(:admin_user) { FactoryGirl.create(:admin_user) }
 
   describe "POST #create" do
     context "User is signed in" do

@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 describe ProductsController, :type => :controller do
-  let(:product1) { Product.create!(name: "Bike #1", description: "Awesome bicycle") }
-  let(:user) { User.create!(email: "test@example.org", password: "123456789") }
-  let(:admin_user) { User.create!(email: "test@example.org", password: "TestPassword123!", admin: true) }
-  let(:comment) { Comment.create!(product_id: product1.id, user_id: user.id, body: "This bike is good", rating: 3) }
+  let(:product1) { FactoryGirl.create(:product) }
+  let(:user) { FactoryGirl.create(:user) }
+  let(:admin_user) { FactoryGirl.create(:admin_user) }
+  let(:comment) { FactoryGirl.build(:comment) }
 
   describe "GET #index" do
     it "should render the page properly" do
