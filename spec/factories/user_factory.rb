@@ -17,17 +17,4 @@ FactoryGirl.define do
     last_name
     admin true
   end
-
-  sequence(:name) { |n| "Product ##{n}" }
-
-  factory :product do
-    name
-  end
-
-  factory :comment do
-    body 'This is awesome'
-    rating 5
-    product
-    user
-  end
 end

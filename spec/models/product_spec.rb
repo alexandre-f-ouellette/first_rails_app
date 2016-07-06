@@ -19,4 +19,14 @@ describe Product do
       expect(Product.new(description: "A great bike")).not_to be_valid
     end
   end
+
+  context "has a price" do
+    before do
+      @product_with_price = FactoryGirl.create(:product_with_price)
+    end
+
+    it "returns the price in cents by multiplying by 100" do
+      expect(@product_with_price.price_in_cents).to eq @product_with_price.price*100
+    end
+  end
 end

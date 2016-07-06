@@ -20,7 +20,7 @@
         <% if @product.price.blank? %>
           Price not yet determined
         <% else %>
-            $<%= @product.price %>
+            $<%= sprintf "%.2f", @product.price %>
         <% end %>
       </h3>
     </div>
@@ -29,6 +29,10 @@
       <strong>Colour: </strong>
       <%= @product.colour %>
     </p>
+
+    <%= form_tag "/payments/create" do %>
+      <%= render partial: "shared/stripe_checkout_button" %>
+    <% end %>
 
     <div class="description-container">
       <p>
