@@ -9,6 +9,6 @@ class Product < ActiveRecord::Base
   end
 
   def price_in_cents
-    price*100
+    (self.price * 100).to_i
   end
 end

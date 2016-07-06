@@ -1,0 +1,20 @@
+<div class="row">
+  <h2>Thank you for your purchase!</h2>
+</div>
+
+<div class="row">
+  <div class="col-md-4 image-container thumbnail">
+    <%= image_tag(@product.image_url, class: "product-image") %>
+  </div>
+
+  <div class="col-md-8">
+    <h2><%= @product.name %></h2>
+
+    <div class="rated", data-score="<%= @product.average_rating %>"></div>
+  </div>
+</div>
+
+<div class="row leave-comment">
+  <h3>Would you like to leave a comment on this product?</h3>
+  <%= button_to('Leave a comment', @product, method: "get", class: "btn btn-primary") %>
+</div>

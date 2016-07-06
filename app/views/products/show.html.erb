@@ -30,8 +30,11 @@
       <%= @product.colour %>
     </p>
 
-    <%= form_tag "/payments/create" do %>
-      <%= render partial: "shared/stripe_checkout_button" %>
+    <% if !@product.price.blank? %>
+      <%= form_tag "/payments/create" do %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
     <% end %>
 
     <div class="description-container">
@@ -51,7 +54,7 @@
   <div class="col-md-9">
     <%= render 'comments' %>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3" id="new-comment">
     <%= render 'new_comment' %>
   </div>
 </div>

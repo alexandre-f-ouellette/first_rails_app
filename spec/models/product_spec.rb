@@ -27,6 +27,7 @@ describe Product do
 
     it "returns the price in cents by multiplying by 100" do
       expect(@product_with_price.price_in_cents).to eq @product_with_price.price*100
+      expect(@product_with_price.price_in_cents).to be_an(Integer)
     end
   end
 end
