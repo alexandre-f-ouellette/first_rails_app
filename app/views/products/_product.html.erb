@@ -17,3 +17,5 @@
 
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div><!-- END OF COL -->
+
+<% logger.debug "Product: #{product.name}" %>
