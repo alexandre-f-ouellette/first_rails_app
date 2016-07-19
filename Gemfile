@@ -30,6 +30,9 @@ gem 'will_paginate', '~> 3.1.0'
 # Stripe for payments
 gem 'stripe'
 
+# Front-side MVC framework - Angular
+gem 'angularjs-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
