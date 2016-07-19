@@ -1,4 +1,4 @@
-$(document).on('ready page:load', function() {
+function userFunctions() {
   $('.rating').raty( {path: '/assets/images', scoreName: 'comment[rating]'} );
 
   $('.rated').raty( { path: '/assets/images',
@@ -9,4 +9,6 @@ $(document).on('ready page:load', function() {
   });
 
   $('.image-zoom').elevateZoom();
-});
+}
+
+$(document).on('ready page:load', userFunctions);
