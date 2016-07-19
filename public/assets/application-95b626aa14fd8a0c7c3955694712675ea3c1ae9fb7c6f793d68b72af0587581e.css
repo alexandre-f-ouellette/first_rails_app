@@ -1,0 +1,378 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+.apple-pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default; }
+  .apple_pagination a, .apple_pagination span {
+    padding: 0.2em 0.3em; }
+  .apple_pagination .disabled {
+    color: #aaaaaa; }
+  .apple_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background-color: #bebebe;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+  .apple_pagination a {
+    text-decoration: none;
+    color: black; }
+    .apple_pagination a:hover, .apple_pagination a:focus {
+      text-decoration: underline; }
+/* line 5, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/payments.scss */
+.leave-comment {
+  padding-bottom: 0.5em;
+}
+/* line 5, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+h1 {
+  color: black;
+  text-decoration: underline;
+}
+
+/* line 10, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.content {
+  padding-left: 1em;
+}
+
+/* line 14, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.product {
+  text-align: center;
+}
+
+/* line 18, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.image-container {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+/* line 24, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.product-image {
+  padding: 1em;
+}
+
+/* line 28, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.description-container {
+  margin-top: 0.5em;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: gray;
+}
+
+/* line 35, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.description-container p {
+  padding-top: 0.5em;
+}
+
+/* line 39, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.price-container {
+  color: #8f001a;
+}
+
+/* line 43, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.price-container h3 {
+  margin-top: 0;
+}
+
+/* line 47, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.comments-container {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: gray;
+  padding-bottom: 0.5em;
+}
+
+/* line 54, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.comments-container p {
+  padding-top: 0.5em;
+}
+
+/* line 58, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.rating {
+  padding-top: 0.2em;
+  padding-bottom: 0.4em;
+}
+
+/* This parent can be any width and height */
+/* line 64, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.block {
+  text-align: center;
+  /* May want to do this if there is risk the container may be narrower than the element inside */
+  white-space: nowrap;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+/* line 72, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+}
+
+/* The element to be centered, can also be of any width and height */
+/* line 81, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/products.scss */
+.delete-span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
+/* line 1, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.carousel-inner img {
+  margin: auto;
+}
+
+/* line 9, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  font-size: 1.5em;
+}
+
+/* line 13, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.item img {
+  max-height: 350px;
+  width: auto;
+}
+
+/* line 18, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/static_pages.scss */
+.content {
+  padding-bottom: 1em;
+}
+/* line 5, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/users.scss */
+.user-actions > h4 {
+  padding-left: 20px;
+}
+
+/* line 9, /Users/mygodal3x/Programming/CareerFoundry/first_rails_app/app/assets/stylesheets/users.scss */
+.my-orders-container {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: grey;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: grey;
+  margin-bottom: 0.5em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+/**** Navigation ****/
+
+.navbar {
+  background-color: #555;
+  width: 100%;
+}
+
+.navbar-brand {
+  padding: 15px 0 0 20px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.nav li a {
+  padding-left: 2em;
+}
+
+.navbar-header button span {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #555;
+}
+
+/* Used for devise forms */
+.form-button {
+  margin-top: 1em;
+}
+
+/* Typography */
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1em;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: yellow;
+}
+
+.navbar-form {
+  margin: 15px 15px 0px 15px;
+}
+
+.navbar-form label {
+  color: white;
+  font-weight: normal;
+}
+
+body {
+  padding-top: 50px;
+}
+
+
+/**** FOOTER ****/
+footer {
+  width: 100%;
+  background-color: #555;
+  color: white;
+  float: left;
+  padding: .8em 0 .5em .3em;
+}
+
+footer p {
+  display: inline;
+  -webkit-margin-before: 0;
+  vertical-align: top;
+  padding-right: .2em;
+}
