@@ -5,7 +5,9 @@
 
   <div class="container">
     <div class="row">
+      <% cache(cache_key_for_products) do %>
         <%= render @products %>
+      <% end %>
     </div>
   </div>
   <br>

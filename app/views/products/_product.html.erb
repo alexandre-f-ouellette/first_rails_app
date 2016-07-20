@@ -1,21 +1,23 @@
-<div class="product col-sm-2 col-md-4">
-  <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+<% cache product do %>
+  <div class="product col-sm-2 col-md-4">
+    <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
 
-  <h2><%= link_to product.name, product %></h2>
+    <h2><%= link_to product.name, product %></h2>
 
-  <p><%= product.description %></p>
+    <p><%= product.description %></p>
 
-  <% if product.price.blank? %>
-    <p>Price not yet determined</p>
-  <% else %>
-    <p>$<%= product.price %></p>
-  <% end %>
+    <% if product.price.blank? %>
+      <p>Price not yet determined</p>
+    <% else %>
+      <p>$<%= product.price %></p>
+    <% end %>
 
-  <%= link_to 'Edit', edit_product_path(product) %>
+    <%= link_to 'Edit', edit_product_path(product) %>
 
-  <span>|</span>
+    <span>|</span>
 
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div><!-- END OF COL -->
+    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div><!-- END OF COL -->
 
-<% logger.debug "Product: #{product.name}" %>
+  <% logger.debug "Product: #{product.name}" %>
+<% end %>

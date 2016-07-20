@@ -55,6 +55,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
+    dalli (2.7.6)
     debug_inspector (0.0.2)
     devise (4.1.1)
       bcrypt (~> 3.0)
@@ -247,6 +248,7 @@ DEPENDENCIES
   byebug
   cancancan
   coffee-rails (~> 4.1.0)
+  dalli
   devise
   factory_girl_rails (~> 4.0)
   guard

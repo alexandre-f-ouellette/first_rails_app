@@ -33,6 +33,9 @@ gem 'stripe'
 # Front-side MVC framework - Angular
 gem 'angularjs-rails'
 
+# Caching client
+gem 'dalli'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
