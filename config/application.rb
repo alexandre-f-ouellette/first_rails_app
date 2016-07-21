@@ -33,5 +33,6 @@ module Nameofapp
     config.active_record.raise_in_transactional_callbacks = true
     config.action_mailer.default_url_options = { host: 'bikeottawarailsdemo.herokuapp.com' }
     config.action_mailer.asset_host = 'http://bikeottawarailsdemo.herokuapp.com'
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
   end
 end
