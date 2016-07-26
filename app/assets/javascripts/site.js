@@ -1,5 +1,5 @@
 function userFunctions() {
-  $('.rating').raty( {path: '/assets/images', scoreName: 'comment[rating]'} );
+  $('.rating').raty( {path: '/assets/images/images', scoreName: 'comment[rating]'} );
 
   $('.rated').raty( { path: '/assets/images',
     readOnly: true,
