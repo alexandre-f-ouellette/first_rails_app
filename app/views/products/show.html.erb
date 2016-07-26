@@ -3,7 +3,7 @@
   <%= link_to 'Back', products_path %>
 </div>
 
-<div class="row">
+<div class="row" data-product-id="<%= @product.id %>">
   <div class="col-md-4 image-container thumbnail">
     <%= image_tag(@product.image_url, class: "product-image image-zoom", data_zoom_image: @product.image_url) %>
   </div>
