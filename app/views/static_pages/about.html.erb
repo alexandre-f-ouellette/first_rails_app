@@ -6,8 +6,7 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <% @products.each do |product| %>
-        <% i = @products.index(product) %>
-        <li data-target="#carousel-example-generic" data-slide-to="<%= i %>" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="<%= product %>" class="active"></li>
       <% end %>
     </ol>
 

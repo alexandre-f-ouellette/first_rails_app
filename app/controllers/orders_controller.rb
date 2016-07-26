@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   protect_from_forgery
-  skip_before_action :verify_authentication_token, if: :json_request?
+  protect_from_forgery unless: -> { request.format.json? }
   respond_to :json, :html
 
   def index

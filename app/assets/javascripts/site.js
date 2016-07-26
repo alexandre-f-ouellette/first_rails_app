@@ -11,4 +11,4 @@ function userFunctions() {
   $('.image-zoom').elevateZoom();
 }
 
-$(document).on('ready page:load', userFunctions);
+$(document).on('turbolinks:load', userFunctions);
